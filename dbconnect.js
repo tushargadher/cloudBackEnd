@@ -6,7 +6,7 @@ const mongoURLCloud  = 'mongodb+srv://tushargadher:tushar#data@mongo@cluster0.jk
 mongoose.set("strictQuery", false);//for removing warning
 
 const connectToMongo = () => {
-   mongoose.connect(mongoURI, () => {
+   mongoose.connect(mongoURLCloud, () => {
       console.log("Connected to Mongo Successfully...");
    })
 }
