@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const mongoURI = "mongodb://localhost:27017/unbook";  //database connection string
 
-const mongoURLCloud  = 'mongodb+srv://tushargadher:tushar#data@mongo@cluster0.jkbmkt6.mongodb.net/cloudnote?retryWrites=true&w=majority';
+const mongoURLCloud  = 'mongodb+srv://tushargadher123_db_user:lodAarcEpDUD1Syg@cluster0.dytpdsw.mongodb.net/';
 
 mongoose.set("strictQuery", false);//for removing warning
 
