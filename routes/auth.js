@@ -63,7 +63,7 @@ router.post('/createuser', [
         res.json({ success, authToken });
     } catch (error) {
         console.error(error.message);
-        res.status(500).send("Internal Server Error.");
+        res.status(500).send(error.message);
     }
 })
 
@@ -111,7 +111,7 @@ router.post('/login', [
         res.json({ success, authToken });
     } catch (error) {
         console.error(error.message);
-        res.status(500).send("Internal Server Error.");
+        res.status(500).send(error.message);
     }
 })
 
@@ -124,7 +124,7 @@ router.post('/getuser', fetchuser, async (req, res) => {
         res.send(user);
     } catch (error) {
         console.error(error.message);
-        res.status(500).send("Internal Server Error.");
+        res.status(500).send(error.message);
     }
 });
  
